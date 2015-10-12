@@ -1,2 +1,1 @@
-# Word_Wolf
-WW
+# Word_WolfをAndroidアプリで作成しよう
