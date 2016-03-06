@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Menu" id="BYZ-38-t0r" customClass="MenuViewController" customModule="WordWolf" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yc0-gi-sw1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="WordWolf" id="oMg-PZ-34c"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プレイヤー数（Total Player）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbH-8y-7iH">
+                                <rect key="frame" x="187" y="94" width="225" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="3" maximumValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="UhP-mt-Aes">
+                                <rect key="frame" x="353" y="145" width="94" height="29"/>
+                                <connections>
+                                    <action selector="playerNumStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="s0s-Dm-QGq"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ウルフ数（Wolf Player）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EL-Zu-IB5">
+                                <rect key="frame" x="206" y="224" width="188" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="zNW-y5-feL">
+                                <rect key="frame" x="353" y="274" width="94" height="29"/>
+                                <connections>
+                                    <action selector="wolfNumStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="wNu-E7-bac"/>
+                                </connections>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMf-og-Slt">
+                                <rect key="frame" x="210" y="394.5" width="180" height="48"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                <state key="normal" title="GAME START"/>
+                                <connections>
+                                    <segue destination="zdg-9F-dIk" kind="presentation" identifier="gameStartSegue" modalTransitionStyle="crossDissolve" id="OS5-VN-kGy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlayerNumber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15w-eU-AcP">
+                                <rect key="frame" x="146" y="144.5" width="108.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WolfNumber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBA-D3-Exa">
+                                <rect key="frame" x="152" y="274.5" width="96.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wBA-D3-Exa" firstAttribute="top" secondItem="3EL-Zu-IB5" secondAttribute="bottom" constant="30" id="6G1-Dz-E3V"/>
+                            <constraint firstItem="UhP-mt-Aes" firstAttribute="top" secondItem="IbH-8y-7iH" secondAttribute="bottom" constant="30" id="7bB-jJ-8ua"/>
+                            <constraint firstItem="qMf-og-Slt" firstAttribute="top" secondItem="3EL-Zu-IB5" secondAttribute="bottom" constant="150" id="7eh-WD-mSV"/>
+                            <constraint firstItem="yc0-gi-sw1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="9It-Z7-HPq"/>
+                            <constraint firstItem="zNW-y5-feL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="FUV-GL-hkn"/>
+                            <constraint firstItem="UhP-mt-Aes" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="GAh-Zw-yVA"/>
+                            <constraint firstItem="wBA-D3-Exa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="HAt-vR-ybG"/>
+                            <constraint firstItem="3EL-Zu-IB5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K9l-Tu-ewd"/>
+                            <constraint firstItem="wBA-D3-Exa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="KIl-kr-lCd"/>
+                            <constraint firstItem="IbH-8y-7iH" firstAttribute="top" secondItem="yc0-gi-sw1" secondAttribute="bottom" constant="50" id="Nx1-zW-2Zt"/>
+                            <constraint firstItem="wBA-D3-Exa" firstAttribute="top" secondItem="3EL-Zu-IB5" secondAttribute="bottom" constant="30" id="SdP-ba-ths"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yc0-gi-sw1" secondAttribute="trailing" constant="-20" id="XxS-fm-sDa"/>
+                            <constraint firstItem="yc0-gi-sw1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="bah-i9-IRy"/>
+                            <constraint firstItem="3EL-Zu-IB5" firstAttribute="top" secondItem="UhP-mt-Aes" secondAttribute="bottom" constant="50" id="cdO-8L-uTB"/>
+                            <constraint firstItem="qMf-og-Slt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dGY-Ow-G5Z"/>
+                            <constraint firstItem="15w-eU-AcP" firstAttribute="top" secondItem="IbH-8y-7iH" secondAttribute="bottom" constant="30" id="daZ-mu-PTF"/>
+                            <constraint firstItem="zNW-y5-feL" firstAttribute="top" secondItem="3EL-Zu-IB5" secondAttribute="bottom" constant="30" id="dw5-32-REm"/>
+                            <constraint firstItem="15w-eU-AcP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="mtB-F7-r6d"/>
+                            <constraint firstItem="IbH-8y-7iH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vOo-mk-y9p"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6G1-Dz-E3V"/>
+                                <exclude reference="KIl-kr-lCd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="playerNumber" destination="15w-eU-AcP" id="kUt-0K-qNw"/>
+                        <outlet property="wolfNumber" destination="wBA-D3-Exa" id="14U-YM-cYv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="52"/>
+        </scene>
+        <!--Game Start View Controller-->
+        <scene sceneID="Beh-08-lHL">
+            <objects>
+                <viewController id="zdg-9F-dIk" customClass="GameStartViewController" customModule="WordWolf" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ksz-7J-MfM"/>
+                        <viewControllerLayoutGuide type="bottom" id="wDc-7Q-5I8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QHQ-xr-R9e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZM-vz-8r8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="GAME START!!" id="euq-be-AfH">
+                                        <barButtonItem key="leftBarButtonItem" title="TOP" id="uYY-o6-EeU">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="partialCurl" id="hEO-Qc-58y"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プレイヤー名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3G-op-Omy">
+                                <rect key="frame" x="249" y="94" width="102" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テーマ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuD-OQ-yvH">
+                                <rect key="frame" x="217.5" y="244.5" width="165" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたのお題は･･･" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqf-b3-aB3">
+                                <rect key="frame" x="228" y="154" width="143" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="n45-nl-T8F">
+                                <rect key="frame" x="282" y="380.5" width="35" height="42"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPushed:" destination="zdg-9F-dIk" eventType="touchUpInside" id="G06-51-GlJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yuD-OQ-yvH" firstAttribute="centerX" secondItem="QHQ-xr-R9e" secondAttribute="centerX" id="5p1-Sk-EaV"/>
+                            <constraint firstItem="Cqf-b3-aB3" firstAttribute="centerX" secondItem="QHQ-xr-R9e" secondAttribute="centerX" id="BgE-ZM-O4d"/>
+                            <constraint firstItem="n45-nl-T8F" firstAttribute="top" secondItem="yuD-OQ-yvH" secondAttribute="bottom" constant="70" id="FJX-MB-s4M"/>
+                            <constraint firstItem="n45-nl-T8F" firstAttribute="centerX" secondItem="QHQ-xr-R9e" secondAttribute="centerX" id="IK9-C3-Bjz"/>
+                            <constraint firstItem="yuD-OQ-yvH" firstAttribute="top" secondItem="Cqf-b3-aB3" secondAttribute="bottom" constant="70" id="Jy8-gP-rxY"/>
+                            <constraint firstItem="LZM-vz-8r8" firstAttribute="top" secondItem="QHQ-xr-R9e" secondAttribute="topMargin" id="K8J-AJ-MvL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LZM-vz-8r8" secondAttribute="trailing" constant="-20" id="aHh-ti-Foq"/>
+                            <constraint firstItem="y3G-op-Omy" firstAttribute="centerX" secondItem="QHQ-xr-R9e" secondAttribute="centerX" id="gCE-Vy-CEQ"/>
+                            <constraint firstItem="y3G-op-Omy" firstAttribute="top" secondItem="LZM-vz-8r8" secondAttribute="bottom" constant="50" id="j8S-Se-ASA"/>
+                            <constraint firstItem="LZM-vz-8r8" firstAttribute="leading" secondItem="QHQ-xr-R9e" secondAttribute="leadingMargin" constant="-20" id="pwk-fU-JqV"/>
+                            <constraint firstItem="Cqf-b3-aB3" firstAttribute="top" secondItem="y3G-op-Omy" secondAttribute="bottom" constant="40" id="wUb-We-o45"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="n45-nl-T8F" id="9PM-Id-Lt0"/>
+                        <outlet property="playerName" destination="y3G-op-Omy" id="eof-SQ-iUO"/>
+                        <outlet property="thema" destination="yuD-OQ-yvH" id="MG7-uN-Poo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWh-WU-Zzz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="52"/>
+        </scene>
+    </scenes>
+</document>
