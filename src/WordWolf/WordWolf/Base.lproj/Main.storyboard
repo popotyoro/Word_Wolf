@@ -27,7 +27,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プレイヤー数（Total Player）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbH-8y-7iH">
                                 <rect key="frame" x="187" y="94" width="225" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="3" maximumValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="UhP-mt-Aes">
@@ -39,7 +39,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ウルフ数（Wolf Player）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EL-Zu-IB5">
                                 <rect key="frame" x="206" y="224" width="188" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="zNW-y5-feL">
@@ -59,13 +59,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlayerNumber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15w-eU-AcP">
                                 <rect key="frame" x="146" y="144.5" width="108.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WolfNumber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBA-D3-Exa">
                                 <rect key="frame" x="152" y="274.5" width="96.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -110,7 +110,7 @@
         <!--Game Start View Controller-->
         <scene sceneID="Beh-08-lHL">
             <objects>
-                <viewController id="zdg-9F-dIk" customClass="GameStartViewController" customModule="WordWolf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameStart" id="zdg-9F-dIk" customClass="GameStartViewController" customModule="WordWolf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ksz-7J-MfM"/>
                         <viewControllerLayoutGuide type="bottom" id="wDc-7Q-5I8"/>
@@ -134,11 +134,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プレイヤー名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3G-op-Omy">
                                 <rect key="frame" x="249" y="94" width="102" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テーマ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuD-OQ-yvH">
-                                <rect key="frame" x="217.5" y="244.5" width="165" height="66"/>
+                                <rect key="frame" x="217" y="244" width="165" height="66"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -146,11 +146,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたのお題は･･･" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqf-b3-aB3">
                                 <rect key="frame" x="228" y="154" width="143" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="n45-nl-T8F">
-                                <rect key="frame" x="282" y="380.5" width="35" height="42"/>
+                                <rect key="frame" x="282" y="380" width="35" height="42"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
@@ -161,17 +161,37 @@
                                     <action selector="nextButtonPushed:" destination="zdg-9F-dIk" eventType="touchUpInside" id="G06-51-GlJ"/>
                                 </connections>
                             </button>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-XI-173" userLabel="throughView">
+                                <rect key="frame" x="0.0" y="134" width="600" height="233"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OKボタンを押すとあなたのお題が表示されます" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqw-RJ-YtW">
+                                        <rect key="frame" x="-127.5" y="93" width="855.5" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Bqw-RJ-YtW" firstAttribute="centerX" secondItem="6f9-XI-173" secondAttribute="centerX" id="5Nd-Jf-WpI"/>
+                                    <constraint firstItem="Bqw-RJ-YtW" firstAttribute="centerY" secondItem="6f9-XI-173" secondAttribute="centerY" id="g8t-R3-xJC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6f9-XI-173" secondAttribute="trailing" constant="-20" id="2dd-vm-EYA"/>
                             <constraint firstItem="yuD-OQ-yvH" firstAttribute="centerX" secondItem="QHQ-xr-R9e" secondAttribute="centerX" id="5p1-Sk-EaV"/>
                             <constraint firstItem="Cqf-b3-aB3" firstAttribute="centerX" secondItem="QHQ-xr-R9e" secondAttribute="centerX" id="BgE-ZM-O4d"/>
+                            <constraint firstItem="n45-nl-T8F" firstAttribute="top" secondItem="6f9-XI-173" secondAttribute="bottom" constant="13.5" id="CLH-nN-xny"/>
                             <constraint firstItem="n45-nl-T8F" firstAttribute="top" secondItem="yuD-OQ-yvH" secondAttribute="bottom" constant="70" id="FJX-MB-s4M"/>
                             <constraint firstItem="n45-nl-T8F" firstAttribute="centerX" secondItem="QHQ-xr-R9e" secondAttribute="centerX" id="IK9-C3-Bjz"/>
                             <constraint firstItem="yuD-OQ-yvH" firstAttribute="top" secondItem="Cqf-b3-aB3" secondAttribute="bottom" constant="70" id="Jy8-gP-rxY"/>
                             <constraint firstItem="LZM-vz-8r8" firstAttribute="top" secondItem="QHQ-xr-R9e" secondAttribute="topMargin" id="K8J-AJ-MvL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LZM-vz-8r8" secondAttribute="trailing" constant="-20" id="aHh-ti-Foq"/>
+                            <constraint firstItem="6f9-XI-173" firstAttribute="top" secondItem="y3G-op-Omy" secondAttribute="bottom" constant="19.5" id="fOB-GZ-ROr"/>
                             <constraint firstItem="y3G-op-Omy" firstAttribute="centerX" secondItem="QHQ-xr-R9e" secondAttribute="centerX" id="gCE-Vy-CEQ"/>
+                            <constraint firstItem="6f9-XI-173" firstAttribute="leading" secondItem="QHQ-xr-R9e" secondAttribute="leadingMargin" constant="-20" id="hV7-gs-wac"/>
                             <constraint firstItem="y3G-op-Omy" firstAttribute="top" secondItem="LZM-vz-8r8" secondAttribute="bottom" constant="50" id="j8S-Se-ASA"/>
                             <constraint firstItem="LZM-vz-8r8" firstAttribute="leading" secondItem="QHQ-xr-R9e" secondAttribute="leadingMargin" constant="-20" id="pwk-fU-JqV"/>
                             <constraint firstItem="Cqf-b3-aB3" firstAttribute="top" secondItem="y3G-op-Omy" secondAttribute="bottom" constant="40" id="wUb-We-o45"/>
@@ -181,11 +201,60 @@
                         <outlet property="nextButton" destination="n45-nl-T8F" id="9PM-Id-Lt0"/>
                         <outlet property="playerName" destination="y3G-op-Omy" id="eof-SQ-iUO"/>
                         <outlet property="thema" destination="yuD-OQ-yvH" id="MG7-uN-Poo"/>
+                        <outlet property="throughView" destination="6f9-XI-173" id="IL1-Yi-dfx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWh-WU-Zzz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="946" y="52"/>
+        </scene>
+        <!--Game Playing View Controller-->
+        <scene sceneID="zBU-5z-tRN">
+            <objects>
+                <viewController storyboardIdentifier="GamePlaying" id="Kws-3N-zJK" customClass="GamePlayingViewController" customModule="WordWolf" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ais-iv-GKx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xk7-co-Nnb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yT2-Pf-08h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PF9-dC-jxu">
+                                <rect key="frame" x="241" y="276" width="117.5" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="T81-0F-cf4">
+                                <rect key="frame" x="225" y="377.5" width="150" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="J3U-VI-CBT"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PF9-dC-jxu" firstAttribute="centerY" secondItem="yT2-Pf-08h" secondAttribute="centerY" id="GM6-lR-97J"/>
+                            <constraint firstItem="Xk7-co-Nnb" firstAttribute="top" secondItem="T81-0F-cf4" secondAttribute="bottom" constant="235" id="cEq-YW-Fqg"/>
+                            <constraint firstItem="T81-0F-cf4" firstAttribute="centerX" secondItem="yT2-Pf-08h" secondAttribute="centerX" id="cbO-I9-6m3"/>
+                            <constraint firstItem="PF9-dC-jxu" firstAttribute="centerX" secondItem="yT2-Pf-08h" secondAttribute="centerX" id="obU-8E-Zfb"/>
+                            <constraint firstItem="T81-0F-cf4" firstAttribute="top" secondItem="PF9-dC-jxu" secondAttribute="bottom" constant="53" id="yrg-Lc-Ikv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cEq-YW-Fqg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="T81-0F-cf4" id="zUD-fh-Vq8"/>
+                        <outlet property="timer" destination="PF9-dC-jxu" id="5FR-6z-8vl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1oG-DW-bpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1594" y="51"/>
         </scene>
     </scenes>
 </document>

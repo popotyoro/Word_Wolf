@@ -27,6 +27,9 @@ class GameSettings: NSObject {
     // テーマ
     static var playersThema:[String] = []
     
+    // プレイ時間(秒)
+    static var playingTime:Int = 180
+    
     
     /**
      ゲーム設定の初期化を行う

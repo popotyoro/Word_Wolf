@@ -10,13 +10,13 @@
 		A61047C2C09B2ADB9ECC2CDF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A16199B3C5652A633DC80B20 /* libPods.a */; };
 		C430D4431C8C6355005BDD78 /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C430D4421C8C6355005BDD78 /* GameStartViewController.swift */; };
 		C4D5ABBE1C8C420800A4B582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5ABBD1C8C420800A4B582 /* AppDelegate.swift */; };
-		C4D5ABC01C8C420800A4B582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5ABBF1C8C420800A4B582 /* ViewController.swift */; };
 		C4D5ABC31C8C420800A4B582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D5ABC11C8C420800A4B582 /* Main.storyboard */; };
 		C4D5ABC51C8C420800A4B582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D5ABC41C8C420800A4B582 /* Assets.xcassets */; };
 		C4D5ABC81C8C420800A4B582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D5ABC61C8C420800A4B582 /* LaunchScreen.storyboard */; };
 		C4D5ABD31C8C420800A4B582 /* WordWolfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5ABD21C8C420800A4B582 /* WordWolfTests.swift */; };
 		C4D5ABDE1C8C420800A4B582 /* WordWolfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5ABDD1C8C420800A4B582 /* WordWolfUITests.swift */; };
 		C4D5ABEC1C8C431300A4B582 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5ABEB1C8C431300A4B582 /* MenuViewController.swift */; };
+		C4FAAA091C8FA14D008B1BCB /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAAA081C8FA14D008B1BCB /* GamePlayingViewController.swift */; };
 		C4FE01BF1C8C5510005128B1 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE01BE1C8C5510005128B1 /* GameSettings.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,9 +42,9 @@
 		3D9B0CA92593FCE08C9E7CFD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A16199B3C5652A633DC80B20 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C430D4421C8C6355005BDD78 /* GameStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
+		C4397D4C1C8C72D100E9B8A9 /* WordWolf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordWolf-Bridging-Header.h"; sourceTree = "<group>"; };
 		C4D5ABBA1C8C420800A4B582 /* WordWolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordWolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D5ABBD1C8C420800A4B582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4D5ABBF1C8C420800A4B582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4D5ABC21C8C420800A4B582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4D5ABC41C8C420800A4B582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4D5ABC71C8C420800A4B582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +56,7 @@
 		C4D5ABDD1C8C420800A4B582 /* WordWolfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWolfUITests.swift; sourceTree = "<group>"; };
 		C4D5ABDF1C8C420800A4B582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4D5ABEB1C8C431300A4B582 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C4FAAA081C8FA14D008B1BCB /* GamePlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayingViewController.swift; sourceTree = "<group>"; };
 		C4FE01BE1C8C5510005128B1 /* GameSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				C4D5ABBD1C8C420800A4B582 /* AppDelegate.swift */,
-				C4D5ABBF1C8C420800A4B582 /* ViewController.swift */,
 				C4D5ABC11C8C420800A4B582 /* Main.storyboard */,
 				C4D5ABC41C8C420800A4B582 /* Assets.xcassets */,
 				C4D5ABC61C8C420800A4B582 /* LaunchScreen.storyboard */,
@@ -127,6 +127,8 @@
 				C4D5ABEB1C8C431300A4B582 /* MenuViewController.swift */,
 				C4FE01BE1C8C5510005128B1 /* GameSettings.swift */,
 				C430D4421C8C6355005BDD78 /* GameStartViewController.swift */,
+				C4397D4C1C8C72D100E9B8A9 /* WordWolf-Bridging-Header.h */,
+				C4FAAA081C8FA14D008B1BCB /* GamePlayingViewController.swift */,
 			);
 			path = WordWolf;
 			sourceTree = "<group>";
@@ -343,8 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FAAA091C8FA14D008B1BCB /* GamePlayingViewController.swift in Sources */,
 				C4FE01BF1C8C5510005128B1 /* GameSettings.swift in Sources */,
-				C4D5ABC01C8C420800A4B582 /* ViewController.swift in Sources */,
 				C4D5ABEC1C8C431300A4B582 /* MenuViewController.swift in Sources */,
 				C4D5ABBE1C8C420800A4B582 /* AppDelegate.swift in Sources */,
 				C430D4431C8C6355005BDD78 /* GameStartViewController.swift in Sources */,
@@ -492,6 +494,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.popota.WordWolf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/WordWolf-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -505,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.popota.WordWolf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/WordWolf-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
