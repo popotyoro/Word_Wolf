@@ -227,18 +227,38 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="T81-0F-cf4">
-                                <rect key="frame" x="225" y="377.5" width="150" height="2"/>
+                                <rect key="frame" x="225" y="377" width="150" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="J3U-VI-CBT"/>
                                 </constraints>
                             </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Let-ry-gub">
+                                <rect key="frame" x="363" y="429" width="73" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="1分増やす"/>
+                                <connections>
+                                    <action selector="didPushIncreaseTime:" destination="Kws-3N-zJK" eventType="touchUpInside" id="Csq-In-ggO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSI-l3-hNa">
+                                <rect key="frame" x="163.5" y="429" width="73" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="1分減らす"/>
+                                <connections>
+                                    <action selector="didPushDecreaseTime:" destination="Kws-3N-zJK" eventType="touchUpInside" id="R0e-49-x5E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Let-ry-gub" firstAttribute="top" secondItem="T81-0F-cf4" secondAttribute="bottom" constant="50" id="4Xq-JY-8di"/>
                             <constraint firstItem="PF9-dC-jxu" firstAttribute="centerY" secondItem="yT2-Pf-08h" secondAttribute="centerY" id="GM6-lR-97J"/>
+                            <constraint firstItem="Let-ry-gub" firstAttribute="centerX" secondItem="yT2-Pf-08h" secondAttribute="centerX" constant="100" id="YFc-TN-WXm"/>
                             <constraint firstItem="Xk7-co-Nnb" firstAttribute="top" secondItem="T81-0F-cf4" secondAttribute="bottom" constant="235" id="cEq-YW-Fqg"/>
+                            <constraint firstItem="XSI-l3-hNa" firstAttribute="top" secondItem="T81-0F-cf4" secondAttribute="bottom" constant="50" id="cO4-ZZ-09K"/>
                             <constraint firstItem="T81-0F-cf4" firstAttribute="centerX" secondItem="yT2-Pf-08h" secondAttribute="centerX" id="cbO-I9-6m3"/>
                             <constraint firstItem="PF9-dC-jxu" firstAttribute="centerX" secondItem="yT2-Pf-08h" secondAttribute="centerX" id="obU-8E-Zfb"/>
+                            <constraint firstItem="XSI-l3-hNa" firstAttribute="centerX" secondItem="yT2-Pf-08h" secondAttribute="centerX" constant="-100" id="qTf-Xt-2MT"/>
                             <constraint firstItem="T81-0F-cf4" firstAttribute="top" secondItem="PF9-dC-jxu" secondAttribute="bottom" constant="53" id="yrg-Lc-Ikv"/>
                         </constraints>
                         <variation key="default">

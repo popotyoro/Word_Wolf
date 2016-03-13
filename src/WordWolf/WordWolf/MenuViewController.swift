@@ -64,7 +64,14 @@ class MenuViewController: UIViewController {
      ウルフを設定します
      */
     private func setWolf() {
-        GameSettings.wolfPlayer.append(1)
+        
+        while(GameSettings.wolfPlayer.count < GameSettings.wolfNumber) {
+            let wolf:Int = Int(arc4random_uniform(UInt32(GameSettings.playerNumber)))
+            if (GameSettings.wolfPlayer.contains(wolf)) {
+                continue
+            }
+            GameSettings.wolfPlayer.append(wolf)
+        }
     }
     
     /**
@@ -74,7 +81,7 @@ class MenuViewController: UIViewController {
      */
     private func setThema() {
         // テーマの大枠の決定
-        let thema:[String] = ["カレー","うん◯"]
+        let thema:[String] = ["てーま１","てーま２"]
         
         // 人間側のテーマの決定
         let humanThema:String = thema[0]

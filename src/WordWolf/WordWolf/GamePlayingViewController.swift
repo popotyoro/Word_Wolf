@@ -59,7 +59,29 @@ class GamePlayingViewController: UIViewController {
         return "\(mm):\(ss)"
     }
     
+    /**
+     1分増やすボタンを押下した時のアクション
+     
+     - parameter sender: <#sender description#>
+     */
+    @IBAction func didPushIncreaseTime(sender: UIButton) {
+        self.resultTime += 60
+    }
     
+    /**
+     1分減らすボタンを押下した時のアクション
+     
+     - parameter sender: <#sender description#>
+     */
+    @IBAction func didPushDecreaseTime(sender: UIButton) {
+        if (self.resultTime > 60){
+            self.resultTime -= 60
+        } else {
+            // 残り時間が1分を切っている場合は強制的に1秒前とする
+            self.resultTime = 1
+        }
+        
+    }
     /*
     // MARK: - Navigation
     
