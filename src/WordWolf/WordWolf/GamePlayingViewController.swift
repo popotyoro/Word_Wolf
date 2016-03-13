@@ -14,15 +14,19 @@ class GamePlayingViewController: UIViewController {
     
     @IBOutlet weak var progressView: UIProgressView!
     
-    var resultTime:Int = GameSettings.playingTime
     @IBOutlet weak var progress: UIProgressView!
+    
+    var resultTime:Int = GameSettings.playingTime
+    
+    var timers:NSTimer = NSTimer()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.timer.text = convertIntToTime(self.resultTime)
         
-        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerAction:"), userInfo: nil, repeats: true)
+        timers = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerAction:"), userInfo: nil, repeats: true)
         
         // Do any additional setup after loading the view.
     }
@@ -39,6 +43,12 @@ class GamePlayingViewController: UIViewController {
             self.timer.text = convertIntToTime(self.resultTime)
             self.progressView.progress = self.progressView.progress - (1.0 / Float(GameSettings.playingTime))
         } else {
+            
+            // timerを止める
+            self.timers.invalidate()
+            
+            // アラートを出して回答画面へ遷移する
+            confirmEndGame()
             
         }
         
@@ -57,6 +67,40 @@ class GamePlayingViewController: UIViewController {
         let ss:String = String(format: "%02d", (timer % 60))
         
         return "\(mm):\(ss)"
+    }
+    
+    /**
+     思考時間を終了し、回答画面に遷移するかどうかアラートを表示させる
+     */
+    private func confirmEndGame() {
+        
+        let alert:UIAlertController = UIAlertController(title:"時間になりました！",
+            message: "犯人(Wolf)だと思う人を指差してください。\n犯人が決まったらOKボタンを押してください",
+            preferredStyle: UIAlertControllerStyle.Alert)
+        
+        // Cancel
+        let cancelAction:UIAlertAction = UIAlertAction(title: "Cancel",
+            style: UIAlertActionStyle.Cancel,
+            handler:{
+                (action:UIAlertAction!) -> Void in
+                // 思考時間を1分増やす
+                self.resultTime = 60
+                // タイマーを再開させる
+                self.timers = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerAction:"), userInfo: nil, repeats: true)
+                
+        })
+        
+        // OK
+        let oKAction:UIAlertAction = UIAlertAction(title: "OK", style: .Default, handler: {
+            (action:UIAlertAction!) -> Void in
+            // 次の画面に遷移する
+        })
+        
+        alert.addAction(cancelAction)
+        alert.addAction(oKAction)
+        
+        presentViewController(alert, animated: true, completion: nil)
+        
     }
     
     /**
