@@ -14,8 +14,6 @@ class GamePlayingViewController: UIViewController {
     
     @IBOutlet weak var progressView: UIProgressView!
     
-    @IBOutlet weak var progress: UIProgressView!
-    
     var resultTime:Int = GameSettings.playingTime
     
     var timers:NSTimer = NSTimer()
@@ -94,6 +92,7 @@ class GamePlayingViewController: UIViewController {
         let oKAction:UIAlertAction = UIAlertAction(title: "OK", style: .Default, handler: {
             (action:UIAlertAction!) -> Void in
             // 次の画面に遷移する
+            self.performSegueWithIdentifier("GameFinishSegue", sender: self)
         })
         
         alert.addAction(cancelAction)
@@ -126,6 +125,20 @@ class GamePlayingViewController: UIViewController {
         }
         
     }
+    
+    /**
+     時間を待たずに犯人ボタンを当てるボタンを押下した時のアクション
+     
+     - parameter sender: <#sender description#>
+     */
+    @IBAction func didPushFinish(sender: CustomButton) {
+        self.timer.text = convertIntToTime(0)
+        self.progressView.progress = 0.0
+        self.resultTime = 0
+        confirmEndGame()
+    }
+    
+    
     /*
     // MARK: - Navigation
     

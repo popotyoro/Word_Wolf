@@ -17,6 +17,7 @@
 		C4D5ABDE1C8C420800A4B582 /* WordWolfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5ABDD1C8C420800A4B582 /* WordWolfUITests.swift */; };
 		C4D5ABEC1C8C431300A4B582 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5ABEB1C8C431300A4B582 /* MenuViewController.swift */; };
 		C4FAAA091C8FA14D008B1BCB /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAAA081C8FA14D008B1BCB /* GamePlayingViewController.swift */; };
+		C4FAAA0C1C95A77A008B1BCB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAAA0B1C95A77A008B1BCB /* CustomButton.swift */; };
 		C4FE01BF1C8C5510005128B1 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE01BE1C8C5510005128B1 /* GameSettings.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		C4D5ABDF1C8C420800A4B582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4D5ABEB1C8C431300A4B582 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C4FAAA081C8FA14D008B1BCB /* GamePlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayingViewController.swift; sourceTree = "<group>"; };
+		C4FAAA0B1C95A77A008B1BCB /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		C4FE01BE1C8C5510005128B1 /* GameSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 		C4D5ABBC1C8C420800A4B582 /* WordWolf */ = {
 			isa = PBXGroup;
 			children = (
+				C4FAAA0A1C95A759008B1BCB /* Buttons */,
 				C4D5ABBD1C8C420800A4B582 /* AppDelegate.swift */,
 				C4D5ABC11C8C420800A4B582 /* Main.storyboard */,
 				C4D5ABC41C8C420800A4B582 /* Assets.xcassets */,
@@ -149,6 +152,14 @@
 				C4D5ABDF1C8C420800A4B582 /* Info.plist */,
 			);
 			path = WordWolfUITests;
+			sourceTree = "<group>";
+		};
+		C4FAAA0A1C95A759008B1BCB /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C4FAAA0B1C95A77A008B1BCB /* CustomButton.swift */,
+			);
+			name = Buttons;
 			sourceTree = "<group>";
 		};
 		EB535E35FB211A9F4985292B /* Pods */ = {
@@ -347,6 +358,7 @@
 			files = (
 				C4FAAA091C8FA14D008B1BCB /* GamePlayingViewController.swift in Sources */,
 				C4FE01BF1C8C5510005128B1 /* GameSettings.swift in Sources */,
+				C4FAAA0C1C95A77A008B1BCB /* CustomButton.swift in Sources */,
 				C4D5ABEC1C8C431300A4B582 /* MenuViewController.swift in Sources */,
 				C4D5ABBE1C8C420800A4B582 /* AppDelegate.swift in Sources */,
 				C430D4431C8C6355005BDD78 /* GameStartViewController.swift in Sources */,
